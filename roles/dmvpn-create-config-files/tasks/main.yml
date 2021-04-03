@@ -1,0 +1,7 @@
+---
+- name: Generate DMVPN configuration files 
+  template: 
+    src: "dmvpn.j2" 
+    dest: "{{item.hostname}}.cfg"
+  with_items: 
+    "{{ routers }}"

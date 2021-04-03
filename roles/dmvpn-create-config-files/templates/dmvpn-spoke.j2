@@ -1,0 +1,9 @@
+int {{item.tun-int}}
+des {{item.tun-description}}
+ip add {{item.tun_interface_ipaddr}} {{item.tun_interface_ipaddr_mask}}
+ip nhrp map {{item.hub-tun-ip}} {{item.hub-wan-ip}}
+ip nhrp map multicast {{item.nhrp-map-mcast}}
+ip nhrp network-id {{item.nhrp-net-id}}
+ip nhrp nhs {{item.nhrp-nhs}}
+tunnel source {{item.tun-src-int}}
+tunnel mode gre multipoint
